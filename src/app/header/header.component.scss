@@ -1,0 +1,32 @@
+.header-container {
+  height: 179px;
+  background: rgb(204, 204, 204);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+}
+
+.stav-logo {
+  height: 107px;
+}
+
+.stav-nav {
+  font-size: 30px;
+  line-height: 55px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 85%;
+
+}
+
+.stav-nav-item {
+  transition: color 200ms;
+  cursor: pointer;
+}
+
+.stav-nav-item:hover {
+  color: rgb(149, 16, 25);
+}

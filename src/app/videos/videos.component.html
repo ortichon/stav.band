@@ -1,0 +1,41 @@
+<div class="videos-container">
+  <div class="videos-header">
+    VIDEOS
+  </div>
+  <div class="swiper-wrapper">
+    <swiper-container
+      #swiper
+      slides-per-view="5"
+      loop="true"
+      [breakpoints]="breakPoints">
+      <swiper-slide  *ngFor="let video of videos">
+        <img src="https://i.ytimg.com/vi/{{video.id}}/mqdefault.jpg">
+        <div class="length">
+          {{ video.length }}
+        </div>
+        <div class="name">
+          {{ video.name }}
+        </div>
+        <svg class="play-button" viewBox="0 0 40 40" fill="currentColor" width="40" height="40">
+          <defs><path d="M20,37.8378378 C29.8515658,37.8378378 37.8378378,29.8515658 37.8378378,20 C37.8378378,10.1484342 29.8515658,2.16216216 20,2.16216216 C10.1484342,2.16216216 2.16216216,10.1484342 2.16216216,20 C2.16216216,29.8515658 10.1484342,37.8378378 20,37.8378378 Z M20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C31.045695,0 40,8.954305 40,20 C40,31.045695 31.045695,40 20,40 Z M26.594595,19.6756755 L15.1351351,12.972973 L15.1351351,26.378378 L26.594595,19.6756755 Z" id="path-play"></path></defs><g id="play-button" stroke="none" fill="none" stroke-width="1" fill-rule="evenodd"><g id="Awesome-Icons---slider-+-grid" transform="translate(-768 -876)"><g id="Icons/play" transform="translate(768 876)"><g id="play"><mask id="mask-play" fill="currentColor"><use xlink:href="#path-play"></use></mask><use id="Mask" fill="currentColor" fill-rule="nonzero" xlink:href="#path-play"></use></g></g></g></g>
+        </svg>
+      </swiper-slide>
+    </swiper-container>
+    <svg
+      class="slide-next"
+      (click)="next()"
+      width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0.38296 20.0762C0.111788 19.805 0.111788 19.3654 0.38296 19.0942L9.19758 10.2796L0.38296 1.46497C0.111788 1.19379 0.111788 0.754138 0.38296 0.482966C0.654131 0.211794 1.09379 0.211794 1.36496 0.482966L10.4341 9.55214C10.8359 9.9539 10.8359 10.6053 10.4341 11.007L1.36496 20.0762C1.09379 20.3474 0.654131 20.3474 0.38296 20.0762Z" fill="currentColor"></path>
+    </svg>
+    <svg
+      class="slide-prev"
+      (click)="prev()"
+      width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0.38296 20.0762C0.111788 19.805 0.111788 19.3654 0.38296 19.0942L9.19758 10.2796L0.38296 1.46497C0.111788 1.19379 0.111788 0.754138 0.38296 0.482966C0.654131 0.211794 1.09379 0.211794 1.36496 0.482966L10.4341 9.55214C10.8359 9.9539 10.8359 10.6053 10.4341 11.007L1.36496 20.0762C1.09379 20.3474 0.654131 20.3474 0.38296 20.0762Z" fill="currentColor" transform-origin="center" transform="rotate(180)"></path>
+    </svg>
+  </div>
+
+
+
+
+</div>

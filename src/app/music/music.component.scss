@@ -1,0 +1,39 @@
+.music-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .music-header {
+    font-size: 85px;
+    margin: 30px 0;
+  }
+
+  .image-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .album-out-container {
+    position: relative;
+
+    .album-out {
+      position: absolute;
+      left: -15px;
+      right: -15px;
+      top: calc(50% - 18px);
+      font-size: 37px;
+      color: #e6ef07;
+      background: black;
+      font-family: 'Bebas Neue', sans-serif;
+      height: 39px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+
+}
+
+
