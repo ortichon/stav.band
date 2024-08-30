@@ -2,16 +2,16 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { NgForOf, NgOptimizedImage } from '@angular/common';
 
 @Component({
-  selector: 'app-about',
+  selector: 'app-shows',
   standalone: true,
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.scss',
+  templateUrl: './shows.component.html',
+  styleUrl: './shows.component.scss',
   imports: [
     NgOptimizedImage,
     NgForOf
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AboutComponent {
+export class ShowsComponent {
 
 }
