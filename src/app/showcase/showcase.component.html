@@ -1,0 +1,50 @@
+<div class="showcase-container">
+  <div class="social-container">
+    <a href="https://www.instagram.com/stavachai/" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://open.spotify.com/artist/1MWyP12SZjhbV6wH4mbVJL?si=5yX9MUJFScC5S04pVw3u-g" target="_blank" aria-label="Instagram">
+      <i class="fab fa-spotify"></i>
+    </a>
+    <a href="https://www.youtube.com/@StavAchai" target="_blank" aria-label="Instagram">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://music.apple.com/us/artist/stav/1529423614" target="_blank" aria-label="Instagram">
+      <i class="fab fa-itunes"></i>
+    </a>
+    <a href="https://www.facebook.com/stav.achai.7/" target="_blank" aria-label="Instagram">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+  </div>
+  <div class="showcase-header">
+    NEW ALBUM OUT ON
+  </div>
+  <div class="showcase-subheader">
+    1.11.24
+  </div>
+  <div class="swiper-wrapper">
+    <swiper-container
+      #swiper
+      slides-per-view="6"
+      space-between="5"
+      autoplay="true"
+      autoplay-delay="2000"
+      loop="true">
+      <swiper-slide  *ngFor="let picture of pictureNumbers">
+        <img src="assets/images/showcase/{{picture}}.jpg">
+      </swiper-slide>
+    </swiper-container>
+    <svg
+      class="slide-next"
+      (click)="next()"
+      width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0.38296 20.0762C0.111788 19.805 0.111788 19.3654 0.38296 19.0942L9.19758 10.2796L0.38296 1.46497C0.111788 1.19379 0.111788 0.754138 0.38296 0.482966C0.654131 0.211794 1.09379 0.211794 1.36496 0.482966L10.4341 9.55214C10.8359 9.9539 10.8359 10.6053 10.4341 11.007L1.36496 20.0762C1.09379 20.3474 0.654131 20.3474 0.38296 20.0762Z" fill="currentColor"></path>
+    </svg>
+    <svg
+      class="slide-prev"
+      (click)="prev()"
+      width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0.38296 20.0762C0.111788 19.805 0.111788 19.3654 0.38296 19.0942L9.19758 10.2796L0.38296 1.46497C0.111788 1.19379 0.111788 0.754138 0.38296 0.482966C0.654131 0.211794 1.09379 0.211794 1.36496 0.482966L10.4341 9.55214C10.8359 9.9539 10.8359 10.6053 10.4341 11.007L1.36496 20.0762C1.09379 20.3474 0.654131 20.3474 0.38296 20.0762Z" fill="currentColor" transform-origin="center" transform="rotate(180)"></path>
+    </svg>
+  </div>
+</div>

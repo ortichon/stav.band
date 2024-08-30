@@ -4,11 +4,12 @@ import { HeaderComponent } from './header/header.component';
 import { MusicComponent } from './music/music.component';
 import { VideosComponent } from './videos/videos.component';
 import { AboutComponent } from './about/about.component';
+import { ShowcaseComponent } from './showcase/showcase.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, MusicComponent, VideosComponent, AboutComponent],
+  imports: [RouterOutlet, HeaderComponent, MusicComponent, VideosComponent, AboutComponent, ShowcaseComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
