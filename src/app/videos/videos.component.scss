@@ -5,7 +5,7 @@
 
   .videos-header {
     font-size: 85px;
-    margin: 30px 0;
+    margin: 50px 0;
   }
 }
 
@@ -28,6 +28,7 @@ img {
     right: 10px;
     top: calc(50% - 20px);
     cursor: pointer;
+    color: white;
   }
 
   .slide-prev {
@@ -35,6 +36,7 @@ img {
     left: 10px;
     top: calc(50% - 20px);
     cursor: pointer;
+    color: white;
   }
 }
 
@@ -47,6 +49,7 @@ swiper-slide {
   display: flex;
   align-items: center;
   position: relative;
+  justify-content: center;
 
   .length {
     position: absolute;
@@ -71,8 +74,8 @@ swiper-slide {
 
   .play-button {
     position: absolute;
-    display: none;
-
+    color: white;
+    cursor: pointer;
   }
 }
 
