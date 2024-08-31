@@ -4,5 +4,9 @@
   max-width: 768px;
   font-family: Helvetica, sans-serif;
   line-height: 1.7;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
