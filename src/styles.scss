@@ -1,5 +1,25 @@
+:root {
+  --base-font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --base-font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --base-font-size: 12px;
+  }
+}
+
 * {
   box-sizing: border-box;
+}
+
+html {
+  font-size: var(--base-font-size);
 }
 
 body {

@@ -5,7 +5,7 @@ import { NgForOf, NgOptimizedImage } from '@angular/common';
   selector: 'app-videos',
   standalone: true,
   templateUrl: './videos.component.html',
-  styleUrl: './videos.component.scss',
+  styleUrls: ['./videos.component.scss', '../app.component.scss'],
   imports: [
     NgOptimizedImage,
     NgForOf

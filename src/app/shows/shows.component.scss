@@ -1,67 +1,75 @@
-.shows-container {
+.show {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 100px;
-  justify-content: center;
-  padding: 0 130px;
+  justify-content: start;
+  width: 100%;
+  flex-wrap: wrap;
 
-
-  .shows-header {
-    font-size: 85px;
-    margin: 50px 0;
+  img {
+    max-width: 100%;
+    height: auto;
   }
 
-  .show {
-    position: relative;
-    display: flex;
-    justify-content: start;
+  .album-launch {
+    background: rgba(255, 255, 255, 0.39);
+    font-family: Helvetica, sans-serif;
+    color: white;
+    padding: 20px;
+    font-size: 1.4rem;
     width: 100%;
 
-    .album-launch {
-      background: rgba(255, 255, 255, 0.39);
-      position: absolute;
-      top: 80px;
-      left: 450px;
-      right: 0;
-      bottom: -75px;
-      font-family: Helvetica, sans-serif;
-      color: white;
-      padding: 80px;
-      font-size: 22px;
-
-      .header {
-        font-size: 56px;
-        margin-bottom: 35px;
-      }
-
-      .where {
-        margin-bottom: 15px;
-      }
-
-      .tickets {
-        text-decoration: none;
-        color: white;
-        background: #D1122A;
-        width: 180px;
-        height: 40px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 36px;
-        font-size: 19px;
-
-        &:visited {
-          color: white;
-        }
-
-        &:hover {
-          color: white;
-          background: #e99e86;
-        }
-      }
+    .header {
+      font-size: 3.5rem;
+      margin-bottom: 35px;
     }
 
+    .where {
+      margin-bottom: 15px;
+    }
+
+    .tickets {
+      text-decoration: none;
+      color: white;
+      background: #D1122A;
+      width: 180px;
+      height: 40px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 36px;
+
+      &:visited {
+        color: white;
+      }
+
+      &:hover {
+        color: white;
+        background: #e99e86;
+      }
+    }
   }
+}
+
+
+@media (min-width: 1024px) {
+  .section-container {
+    margin-bottom: 120px!important;
+
+    .show {
+      img {
+        margin: 0 0 0 calc((100% - 1000px) * 0.5);
+      }
+
+      .album-launch {
+        position: absolute;
+        left: calc((100% - 150px) * 0.5);
+        right: 150px;
+        top: 80px;
+        width: unset;
+      }
+    }
+  }
+
+
 }

@@ -5,7 +5,7 @@ import { NgForOf, NgOptimizedImage } from '@angular/common';
   selector: 'app-shows',
   standalone: true,
   templateUrl: './shows.component.html',
-  styleUrl: './shows.component.scss',
+  styleUrls: ['./shows.component.scss', '../app.component.scss'],
   imports: [
     NgOptimizedImage,
     NgForOf

@@ -25,7 +25,7 @@
     }
 
     i {
-      font-size: 30px;
+      font-size: 1.875rem;
       cursor: pointer;
       width: 33px;
       height: 33px;
@@ -36,44 +36,43 @@
   }
 
   .showcase-header {
-    font-size: 55px;
+    font-size: 2.5rem;
   }
 
   .showcase-subheader {
-    font-size: 120px;
+    font-size: 2.5rem;
     letter-spacing: -0.01em;
   }
 }
 
 .swiper-wrapper {
-  width: 990px;
+  width: 100%;
   position: relative;
   padding: 0 40px;
-  //background: rgba(255, 255, 255, 0.11);
   user-select: none;
-  margin-bottom: 50px;
-  height: 464px;
   margin-top: 20px;
+  max-width: 768px;
 
   img {
     height: 100%;
     cursor: pointer;
+    max-height: 40vh;
   }
 
-  .slide-next {
+  .slide-trigger {
     position: absolute;
     right: 10px;
-    top: calc(50% - 20px);
+    top: calc(50% - 1.7rem);
     cursor: pointer;
     color: white;
-  }
 
-  .slide-prev {
-    position: absolute;
-    left: 10px;
-    top: calc(50% - 20px);
-    cursor: pointer;
-    color: white;
+    &.slide-next {
+      right: 10px;
+    }
+
+    &.slide-prev {
+      left: 10px;
+    }
   }
 }
 

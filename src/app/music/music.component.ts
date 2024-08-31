@@ -8,7 +8,7 @@ import { NgOptimizedImage } from '@angular/common';
   imports: [
     NgOptimizedImage
   ],
-  styleUrl: './music.component.scss'
+  styleUrls: ['./music.component.scss', '../app.component.scss']
 })
 export class MusicComponent {
 
