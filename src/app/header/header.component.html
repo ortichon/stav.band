@@ -17,4 +17,28 @@
       CONTACT
     </div>
   </div>
+  <button class="hamburger" aria-label="Toggle navigation" (click)="toggleSizeDrawer()">
+    &#9776;
+  </button>
 </div>
+
+<aside class="side-drawer" [ngClass]="{ 'open': isSideDrawerOpen }">
+  <button class="close-drawer" aria-label="Close navigation" (click)="toggleSizeDrawer()">
+    &times;
+  </button>
+  <div class="stav-nav-item" (click)="scrollToSection($event, 'music')">
+    MUSIC
+  </div>
+  <div class="stav-nav-item" (click)="scrollToSection($event, 'videos')">
+    VIDEOS
+  </div>
+  <div class="stav-nav-item" (click)="scrollToSection($event, 'about')">
+    ABOUT
+  </div>
+  <div class="stav-nav-item" (click)="scrollToSection($event, 'shows')">
+    SHOWS
+  </div>
+  <div class="stav-nav-item" (click)="scrollToSection($event, 'contact')">
+    CONTACT
+  </div>
+</aside>

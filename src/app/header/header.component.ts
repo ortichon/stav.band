@@ -1,24 +1,28 @@
 import { Component } from '@angular/core';
-import { NgOptimizedImage } from '@angular/common';
+import { NgClass, NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
   templateUrl: './header.component.html',
   imports: [
-    NgOptimizedImage
+    NgOptimizedImage,
+    NgClass
   ],
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+
+  isSideDrawerOpen = false;
 
   scrollToSection(event: Event, targetSection: string) {
     event.preventDefault();
     const target = document.getElementById(targetSection);
     if (target) {
       this.smoothScroll(target, 1200)
-      // target.scrollIntoView({ behavior: 'smooth' });
     }
+
+    this.isSideDrawerOpen = false;
   }
 
   smoothScroll(target: HTMLElement, duration: number) {
@@ -43,5 +47,9 @@ export class HeaderComponent {
     }
 
     requestAnimationFrame(animation);
+  }
+
+  toggleSizeDrawer() {
+    this.isSideDrawerOpen = !this.isSideDrawerOpen;
   }
 }
